@@ -14,7 +14,17 @@ Bir arama kurtarma bölgesi düşünün. Bu alan çok büyük, inişlerin çık�
 - Eğimi hesaplar
 - Aşağıya doğru giden bir yön bulur ve gider.
 
-Bu durumda dron daha alçak bir noktaya ilerlemiş olsa bile bu yer arazideki en alçak yer olmayabilir. Bu probleme local optima sorun da denilir.
+Bu durumda dron daha alçak bir noktaya ilerlemiş olsa bile bu yer arazideki en alçak yer olmayabilir. Dron ileride daha iyi bir konumun olduğunu bilemez.BU durumu aşmak için farklı uygulamalar, iyilaştirmeler vardır.
+
+PSO algoritması ise bu arazide şöyel davranır. N tane dron aynı anda havalanır. Hepsi Farklı yerlere gider ve her bir dron şunu yapar;
+- Bulunduğum yerde konum iyi mi ?
+- Daha önce gittiğim yerler arasında en iyi hangisi?
+- Diğer dronlardan biri benden daha iyi bir yerde mi ?
+
+Bir dron herkezden daha iyi bir konum bulduğunda diğerleri o yöne doğru yavaş yavaş kaymaya başlar. Bu kaymam yavaş yavaş olur ve tüm süür birden bire aynı noktaya toplanmaz. Böylece, algortma keşif/sömürü dengesini kurmuş olur. Tüm sürü aynı anda en iyi olan noktaya gitmeyerek yol üzeirndeki olası daha iyi konumu sürüye bildirme şansını kaybetmezler ama yavaş yavaş aynı noktaya kayarak tüm parçacıkların en iyi yer egelmesini sağlarlar.
+
+
+
 
 
 
