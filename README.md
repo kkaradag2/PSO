@@ -112,10 +112,93 @@ x_2 = -2 \Rightarrow f(-2) = (-2)^2 = 4
 x_3 = 1 \Rightarrow f(1) = 1^2 = 1
 ```
 
-değerleri elde edilir. Bu değerler arasında en küçük değer **1** olduğu için, sürünün en iyi konumu
+değerleri elde edilir. Bu değerler arasında en küçük değer **1** olduğu için, sürünün en iyi konumu gBest = 1 olarak belirlenir.
+Tüm parçaların bir sonraki hareket için posiyon ve hızlarını hesaplayabilemek için elimizde artık GBest değeri var.
 
 ```math
-gBest = 1
+\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
++ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
++ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
 ```
 
-olarak belirlenir.
+formulunu kullanarak tüm parçaıklar için hız ve pozisyonaları hesaplayacağız;
+
+**Parçacık 1**
+
+```math
+\vec{v}_1^{(0+1)} = \vec{v}_1^{(1)} 
+```
+ile 1 parçacığın t=1 anındaki hızını hesaplalım
+
+```math
+\vec{v}_1^{(1)} = (0.5).(0) +(1).(1).(4-4) + (1).(1).(1-4) = -3
+```
+
+bu hıza bağlı olarak t=1 anında parçacığın yeni konumu 
+
+```math
+x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}
+```
+forlumü kullanılarak hesaplanabililir.
+```math
+x_1^{1} =4 + (-3) = 1
+```
+**Parçacık 2**
+
+```math
+\vec{v}_2^{(1)} = (0.5).(0) +(1).(1).(-2-(-2)) + (1).(1).(1-(-2)) = 3
+```
+ve konumu;
+```math
+x_2^{1} = -2 + 3= 1
+```
+
+**Parçacık 3**
+
+```math
+\vec{v}_2^{(1)} = (0.5).(0) +(1).(1).(1-1)) + (1).(1).(1-1) = 0
+```
+ve konumu;
+```math
+x_2^{1} = 1 -0 = 1
+```
+
+t=1 anı için hesaplamalar sonucunda parçacıkların durumları amaç fonsyonda yerien konularak yeni gBest noktası bulunur.
+
+```math
+\begin{aligned}
+x_1^1 = 1 , x_2^1 = 1 , x_3^1 = 1
+\end{aligned}
+```
+```math
+x_1^1 = 1 \Rightarrow f(1) = 1^2 = 1
+```
+
+```math
+x_2^1 = 1 \Rightarrow f(1) = 1^2 = 1
+```
+
+```math
+x_3^1 = 1 \Rightarrow f(1) = 1^2 = 1
+```
+
+Bu hesaplama sonucunda gBest = 1 olur.
+
+**Iterasyon 1 (t=2)**
+ Halen parçacıklar aynı konumda yanı 1 konumundalar ama artık hepsinin farklı bir hızı olduğıu için t=2 anı için farklı noktalara gitmeye başlayacaklar.
+
+ **Parçacık 1**
+
+```math
+\vec{v}_1^{(2)} = (0.5).(-3) +(1).(1).(1-1) + (1).(1).(1-1) = -1.5
+```
+
+bu hıza bağlı olarak t=2 anında parçacığın yeni konumu 
+
+```math
+x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}
+```
+forlumü kullanılarak hesaplanabililir.
+```math
+x_1^{2} = 1 + (-1.5) = 0.5
+```
