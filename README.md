@@ -29,17 +29,11 @@ Dron sürüsü örneğinde, her dronun aynı and ahavandığını ve farklı yö
 PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini belirleyen hızdenklemi (velocity equation), üç temel bileşenden oluşur. Bu bileşenler, parçacığın hem kendi geçmişine hemde sürünün(sosyal) bilgisine daynarak hareket etmesini sağlar.
 
 
-$$
-v_i(t+1) = w\,v_i(t)
-+ c_1 r_1 \big(pBest_i - x_i(t)\big)
-+ c_2 r_2 \big(gBest - x_i(t)\big)
-$$
-
-
-**The Cauchy-Schwarz Inequality**
+**PSO Velocity Update Equation**
 
 ```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
+v_i(t+1)=w\,v_i(t)
++c_1 r_1\big(pBest_i-x_i(t)\big)
++c_2 r_2\big(gBest-x_i(t)\big)
 
  
