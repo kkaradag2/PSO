@@ -185,6 +185,7 @@ x_3^1 = 1 \Rightarrow f(1) = 1^2 = 1
 Bu hesaplama sonucunda gBest = 1 olur.
 
 **Iterasyon 1 (t=2)**
+
  Halen parçacıklar aynı konumda yanı 1 konumundalar ama artık hepsinin farklı bir hızı olduğıu için t=2 anı için farklı noktalara gitmeye başlayacaklar.
 
  **Parçacık 1**
@@ -202,3 +203,47 @@ forlumü kullanılarak hesaplanabililir.
 ```math
 x_1^{2} = 1 + (-1.5) = 0.5
 ```
+
+ **Parçacık 2**
+
+```math
+\vec{v}_2^{(2)} = (0.5).(3) +(1).(1).(1-1) + (1).(1).(1-1) = 1.5
+```
+
+bu hıza bağlı olarak t=2 anında parçacığın yeni konumu 
+
+```math
+x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}
+```
+forlumü kullanılarak hesaplanabililir.
+```math
+x_2^{2} = 1 + 1.5 = 2.5
+```
+
+ **Parçacık 3**
+
+```math
+\vec{v}_3^{(2)} = (0.5).(0) +(1).(1).(1-1) + (1).(1).(1-1) = 0
+```
+
+bu hıza bağlı olarak t=2 anında parçacığın yeni konumu 
+
+```math
+x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}
+```
+forlumü kullanılarak hesaplanabililir.
+```math
+x_3^{2} = 1 +0 = 1
+```
+
+amaç fonsyonda yeni x değerleri ile hesaplama yaptığımızda
+
+```math
+\begin{aligned}
+f(-0.5) &= 0.25 \\
+f(2.5) &= 6.25 \\
+f(1) &= 1
+\end{aligned}
+```
+
+bu durumda gBest = 0.25 olur.
