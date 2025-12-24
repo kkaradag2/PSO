@@ -112,9 +112,7 @@ x_2 = -2 \Rightarrow f(-2) = (-2)^2 = 4
 x_3 = 1 \Rightarrow f(1) = 1^2 = 1
 ```
 
-değerleri elde edilir.
-
-Bu değerler arasında en küçük değer **1** olduğu için, sürünün en iyi konumu
+değerleri elde edilir. Bu değerler arasında en küçük değer **1** olduğu için, sürünün en iyi konumu
 
 ```math
 gBest = 1
