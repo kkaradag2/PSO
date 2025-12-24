@@ -28,13 +28,11 @@ Dron sürüsü örneğinde, her dronun aynı and ahavandığını ve farklı yö
 
 PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini belirleyen hızdenklemi (velocity equation), üç temel bileşenden oluşur. Bu bileşenler, parçacığın hem kendi geçmişine hemde sürünün(sosyal) bilgisine daynarak hareket etmesini sağlar.
 
-\[
-\mathbf{v}_i^{t+1}
-= w\,\mathbf{v}_i^{t}
-+ c_1 r_1 \left(\mathbf{pBest}_i - \mathbf{x}_i^{t}\right)
-+ c_2 r_2 \left(\mathbf{gBest} - \mathbf{x}_i^{t}\right)
-\]
 
+
+v_i(t+1) = w * v_i(t)
+           + c1 * r1 * (pBest_i - x_i(t))
+           + c2 * r2 * (gBest   - x_i(t))
 
 
 
