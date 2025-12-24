@@ -55,4 +55,23 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 **Social Component (Sosyal Bileşen)** 
 Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
 
+```math
+ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
+```
+
 Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaşlarının başarısını bir araya getirerek bir vektör oluşturur.
+
+##Örnek-I
+3 parçacıktan oluşan bir sürüde amaç fonksyon aşağıdaki fonsksyonun minimize etmeyi amaçlıyor.
+```math
+f(x) = x^2 
+```
+w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sırayla 4, -2 ve 1 konumundalar. Bu verilenlerle PSO algoritmasını iki iterasyon ilerletelim.
+
+##Çözüm:
+
+**Başlangıç (t=0) **
+
+```math
+  x_1^0 = 4 ,   x_2^0 = -2 ,   x_3^0 = 1 
+```
