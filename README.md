@@ -74,18 +74,27 @@ w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sı
 
 - Parçacıkların başlancıç (t=0) anındaki konumları. Genellikle random verilir.
 ```math
-  x_1^0 = 4 \  ,     x_2^0 = -2   \  ,       x_3^0 = 1
+ \left x_1^0 = 4 \  ,     x_2^0 = -2   \  ,       x_3^0 = 1
 ```
 
 - Parçacıkların başlancıç (t=0) anındaki hızları. Başlangıç anınd atüm parçaların hızı 0 dır.
 ```math
-  v_1^0 =  v_2^0 =  v_3^0 = 0
+ \left v_1^0 =  v_2^0 =  v_3^0 = 0
 ```
 
-Değerleri f(x) = x^2 amaç fonsyonund ayeri koyduğumuzda sırasıyla
+Değerleri 
+
+```math 
+f(x) = x^2
+``` 
+ amaç fonsyonunda yeri koyduğumuzda 
 ```math
-   x_1 = 4 => f(4) = (4)^2 = 16 \n
-   x_2 = -2 => f(-2) = (-2)^2 = 4 \n
+   x_1 = 4 => f(4) = (4)^2 = 16 
+```   
+```math
+   x_2 = -2 => f(-2) = (-2)^2 = 4 
+```   
+```math
    x_3 = 1 => f(1) = (1)^2 = 1 
 ```
-En düşük değer 1 olduğu için sürünün en iyi konumu gBest=1 olur.
+Değerleri elde edilir. Bunların içinde en küçük değer 1 olduğu için sürünün en iyi konumu gBest=1 olur.
