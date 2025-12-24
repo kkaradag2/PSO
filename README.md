@@ -32,7 +32,7 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 **PSO Velocity Update Equation**
 
 ```math
-v_i^(t+1)=w\,v_i^(t)
+v_i^{(t+1)}=w\,v_i^{(t)}
 +c_1 r_1\big(pBest_i-x_i(t)\big)
 +c_2 r_2\big(gBest-x_i(t)\big)
 
