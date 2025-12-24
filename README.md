@@ -70,8 +70,14 @@ w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sı
 
 ##Çözüm:
 
-**Başlangıç (t=0) **
+**Başlangıç (t=0)**
 
 ```math
-  x_1^0 = 4 ,   x_2^0 = -2 ,   x_3^0 = 1 
+  x_1^0 = 4
+```
+```math
+  x_2^0 = -2
+```
+```math
+  x_3^0 = 1
 ```
