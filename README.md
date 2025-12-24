@@ -29,12 +29,11 @@ Dron sürüsü örneğinde, her dronun aynı and ahavandığını ve farklı yö
 PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini belirleyen hızdenklemi (velocity equation), üç temel bileşenden oluşur. Bu bileşenler, parçacığın hem kendi geçmişine hemde sürünün(sosyal) bilgisine daynarak hareket etmesini sağlar.
 
 
-
-**PSO Velocity Update Equation**
+**PSO Hız Güncelleme Formulü**
 
 ```math
 \vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
-+ c_1 r_1\big(\vec{P}_i^t - \vec{x}_i^t\big)
-+ c_2 r_2\big(\vec{G}^t - \vec{x}_i^t\big)
++ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
++ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
 
  
