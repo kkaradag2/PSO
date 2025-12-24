@@ -1,10 +1,13 @@
 # Particle Swarm Optimization (PSO)
-Particle Swarm Optimization (PSO), doğadaki kuş ve balık sürülerinin yiyecek aramak veya bir yerden başka bir yere göç etmek için uyguladıkları yöntemleri taklit ederek oluşturulmuş stokastik bir algotitmadır. 1990'ların başında James Kennedy (Sosyal pisikolog) ve Russell Eberhart(Elektirik Mühendisi) adlı iki bilim insanının kuş ve balık sürülerinin davranışlarını bir matematik modelel olarak ortaya koyma çlaışmalarına dayanır. Kennedy ve Eberhart , 1995 yılında bu davranış modelinin, sayısal problemlerde çözüm olarak kullanılabileceğini fark ederek yayınladıkları "Partical Swarm Optimization" - 1995, IEEE makelesiyle bilim dünyasına duyurulmuştur.
 
-1998 - 2002 arasında modellerine, inertia weight (w), bireysel (c₁) ve sosyal (c₂) terimleri eklenerek yaklaşma davranışı kontrol altına alarak modeli daha da olgunlaştırmışlardır.
+Particle Swarm Optimization (PSO), doğadaki kuş ve balık sürülerinin yiyecek arama ve yön bulma davranışlarından esinlenilerek geliştirilmiş, popülasyon tabanlı bir optimizasyon algoritmasıdır. Algoritma, 1995 yılında James Kennedy ve Russell Eberhart tarafından önerilmiştir.
+
+PSO’nun temel fikri, çözüm uzayında hareket eden parçacıkların hem kendi deneyimlerinden (bireysel en iyi konum) hem de sürünün paylaşılan bilgisinden (global en iyi konum) faydalanarak daha iyi çözümlere yönelmesidir. Bu yaklaşım sayesinde algoritma, türev bilgisine ihtiyaç duymadan karmaşık ve doğrusal olmayan problemlerde etkili sonuçlar üretebilir.
+
+İlerleyen yıllarda PSO modeli çeşitli geliştirmelerle zenginleştirilmiştir. Özellikle inertia weight (w), bireysel öğrenme katsayısı (c₁) ve sosyal öğrenme katsayısı (c₂) gibi parametreler tanımlanarak algoritmanın keşif (exploration) ve sömürü (exploitation) dengesi daha kontrollü hale getirilmiştir. Bu geliştirmeler, PSO’nun farklı problem türlerine uyarlanabilirliğini ve performansını artırmıştır. 
 
 # Kullanım Alanları
-Bir sayısal denklemin türevi alınarak bu denklemin eğitimi tespit edilebilir. Bu sayade verilecek paremetlerlerin büyüklükleri tespit edilerek yönün aşağı mı yukarımı çıkacağı bulunabilir. Bu yaklaşımı kullanan Gradient Descent, bir noktanın grafikteki eğimine bakarak aşağıya nasıl gidilebileceği bulabilir. Böylece o noktadan daha iyi bir noktaya (aşağıya) nasıl gidilebileceğini tespit edebilir. Bu yaklaşım, alan pürüzsüzse veya çok fazla girinti çıkıntı yoksa sistmei hızlıca sonuca ulaştırır. Ama yüzey çok bozuksa, dolayısyla çok fazla çukur ve çıkıntı varsa yanıltıcı sonuçlar üretebilir. Özetle Gradient Descent eğime güvenir.
+Bir sayısal denklemin türevi alınarak bu denklemin eğitimi tespit edilebilir. Bu sayade verilecek parametrelerin büyüklükleri tespit edilerek yönün aşağı mı yukarımı çıkacağı bulunabilir. Bu yaklaşımı kullanan Gradient Descent, bir noktanın grafikteki eğimine bakarak aşağıya nasıl gidilebileceği bulabilir. Böylece o noktadan daha iyi bir noktaya (aşağıya) nasıl gidilebileceğini tespit edebilir. Bu yaklaşım, alan pürüzsüzse veya çok fazla girinti çıkıntı yoksa sistmei hızlıca sonuca ulaştırır. Ama yüzey çok bozuksa, dolayısyla çok fazla çukur ve çıkıntı varsa yanıltıcı sonuçlar üretebilir. Özetle Gradient Descent eğime güvenir.
 
 PSO ise eğime güvenmez bunun yerine birden fazla noktaya aynı anda parçacıkları sayesinde gezer. Hangi parçacık iyi bir konum bulduysa diğerlerine haber vererek tüm sürünün yavaş yavaş o noktaya kaymasını sağlar. Bu yaklaşımı ile türevi alınamayan veya alınsa bile çok karmaşık yüzeylerin yada çok paremetreli sistmelerin çözümünde etkili bir çözüm sunar.
 
@@ -31,26 +34,37 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 
 **PSO Hız Güncelleme Formulü**
 
-$`\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t+ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)+ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)`$
+```math
+\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
++ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
++ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
+```
 
-&nbsp;
-&nbsp;
 
  **Intertia (Atalet)**
- Bu bileşen  $` w\,\vec{v}_i^t`$ , parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Atalet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
-&nbsp;
+ Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
+
+ ```math
+ w\,\vec{v}_i^t
+ ```
 
  **Individual Component (Bireysel Bileşen)**
- Bu bileşen $`c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)`$ , parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
-&nbsp;
+ Bu bileşen, parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
 
+ ```math
+ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
+
+```
 **Social Component (Sosyal Bileşen)** 
-Bu bileşen $` c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)`$, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
-&nbsp;
+Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
+
+```math
+ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
+```
 
 Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaşlarının başarısını bir araya getirerek bir vektör oluşturur.
 
-## Örnek-I
+##Örnek-I
 3 parçacıktan oluşan bir sürüde, $`f(x) = x^2 `$ amaç fonksyonu minimize edecek sonuca ulaşmak istiyoruz. Bu amaçla algoritmanın $`w=0.5`$, $`c_1=1`$ , $`c_2=1`$  ve $`r1=r2=1`$  değerleri ile iki iterasyon ilerletelim.
 
 ## Çözüm
@@ -148,4 +162,4 @@ bu durumda $`gBest= 0.25`$ olur. Sonuç olarak $`t=0$` anından $`t=2$ anına ka
 | 2 | 2 | -0.5 | -1.5 | 0.25 | -2  | 0.25 |
 | 2 | 3 | 1    | 0    | 1    | 1   | 0.25 |
 
-![Alt text](assets/PSO_Soru_1.png)
+![assets\PSO_Soru_1.png]
