@@ -38,10 +38,21 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 ```
 
 
- - **Intertia (Atalet)**
+ **Intertia (Atalet)**
  Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
 
- **
  ```math
  w\,\vec{v}_i^t
- ```**
+ ```
+
+ **Individual Component (Bireysel Bileşen)**
+ Bu bileşen, parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
+
+ ```math
+ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
+
+```
+**Social Component (Sosyal Bileşen)** 
+Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
+
+Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaşlarının başarısını bir araya getirerek bir vektör oluşturur.
