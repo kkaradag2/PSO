@@ -33,7 +33,7 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 
 ```math
 v_i^{(t+1)}=w\,v_i^t
-+c_1 r_1\big(p^t_i)\big)
-+c_2 r_2\big(gBest-x_i(t)\big)
++c_1 r_1\big(P^t_i-x_i^t\big)
++c_2 r_2\big(G^t-x^t_i\big)
 
  
