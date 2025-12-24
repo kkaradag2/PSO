@@ -68,34 +68,56 @@ f(x) = x^2
 ```
 w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sırayla 4, -2 ve 1 konumundalar. Bu verilenlerle PSO algoritmasını iki iterasyon ilerletelim.
 
-## Çözüm:
+## Çözüm
 
-**Başlangıç (t=0)**
+### Başlangıç (t = 0)
 
-- Parçacıkların başlancıç (t=0) anındaki konumları. Genellikle random verilir.
+- Parçacıkların başlangıç (t = 0) anındaki konumları. Genellikle rastgele verilir.
 
 ```math
-x_1^0 = 4,\quad x_2^0 = -2,\quad x_3^0 = 1
+\begin{aligned}
+x_1^0 &= 4 \\
+x_2^0 &= -2 \\
+x_3^0 &= 1
+\end{aligned}
 ```
 
-- Parçacıkların başlancıç (t=0) anındaki hızları. Başlangıç anınd atüm parçaların hızı 0 dır.
+- Parçacıkların başlangıç (t = 0) anındaki hızları. Başlangıç anında tüm parçacıkların hızı 0’dır.
+
 ```math
- v_1^0 =  v_2^0 =  v_3^0 = 0
+\begin{aligned}
+v_1^0 &= 0 \\
+v_2^0 &= 0 \\
+v_3^0 &= 0
+\end{aligned}
 ```
 
-Değerleri 
+Bu değerleri amaç fonksiyonu
 
-```math 
- f(x) = x^2 
-``` 
- amaç fonsyonunda yeri koyduğumuzda 
 ```math
-   x_1 = 4 => f(4) = (4)^2 = 16  
-```   
-```math
-    x_2 = -2 => f(-2) = (-2)^2 = 4  
-```   
-```math
-    x_3 = 1 => f(1) = (1)^2 = 1  
+f(x) = x^2
 ```
-Değerleri elde edilir. Bunların içinde en küçük değer 1 olduğu için sürünün en iyi konumu gBest=1 olur.
+
+içinde yerine koyduğumuzda:
+
+```math
+x_1 = 4 \Rightarrow f(4) = 4^2 = 16
+```
+
+```math
+x_2 = -2 \Rightarrow f(-2) = (-2)^2 = 4
+```
+
+```math
+x_3 = 1 \Rightarrow f(1) = 1^2 = 1
+```
+
+değerleri elde edilir.
+
+Bu değerler arasında en küçük değer **1** olduğu için, sürünün en iyi konumu
+
+```math
+gBest = 1
+```
+
+olarak belirlenir.
