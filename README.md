@@ -164,5 +164,5 @@ bu durumda $`gBest= 0.25`$ olur. Sonuç olarak $`t=0$` anından $`t=2$ anına ka
 
 <img width="557" height="412" alt="PSO_Soru_1" src="https://github.com/user-attachments/assets/83766dff-b30d-45be-ac1b-1f4326022471" />
 
-## [a relative link](Sample2.md)
+## [Örnek Soru 2](Sample2.md)
 
