@@ -70,17 +70,12 @@ w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sı
 
 ## Çözüm
 
-### Başlangıç (t = 0)
+### Başlangıç ($`t = 0`$)
 
-- Parçacıkların başlangıç (t = 0) anındaki konumları. Genellikle rastgele verilir.
+- Parçacıkların başlangıç **$`t = 0`$** anındaki konumları. Rastgele konumlar olarak belirlenir. Bu nednele her üç parçacığın başlanğıç konumlarını
 
-```math
-\begin{aligned}
-x_1^0 &= 4 \\
-x_2^0 &= -2 \\
-x_3^0 &= 1
-\end{aligned}
-```
+$`x_1^0 = 4, x_2^0 = -2 ve x_3^0 = 1`$ olarak atıyoruz.
+
 
 - Parçacıkların başlangıç (t = 0) anındaki hızları. Başlangıç anında tüm parçacıkların hızı 0’dır.
 
@@ -193,12 +188,9 @@ Bu hesaplama sonucunda gBest = 1 olur.
 ```math
 \vec{v}_1^{(2)} = (0.5).(-3) +(1).(1).(1-1) + (1).(1).(1-1) = -1.5
 ```
-<br/>
-bu hıza bağlı olarak t=2 anında parçacığın yeni konumu $`x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}`$ formülü kullanılarak hesaplanabilir. Böylece;
 
-```math
-x_1^{2} = 1 + (-1.5) = 0.5
-```
+bu hıza bağlı olarak t=2 anında parçacığın yeni konumu  $\`x_i^{t+1} = x_i^t + \vec{v}_i^{t+1} \`$ formülü kullanılarak hesaplanabilir. Böylece $\`x_1^{2} = 1 + (-1.5) = 0.5\`$ olarak hesaplanır.
+
 
  **Parçacık 2**
 
