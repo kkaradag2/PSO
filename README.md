@@ -76,26 +76,26 @@ w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sı
 
 ```math
 x_1^0 = 4,\quad x_2^0 = -2,\quad x_3^0 = 1
-
+```
 
 - Parçacıkların başlancıç (t=0) anındaki hızları. Başlangıç anınd atüm parçaların hızı 0 dır.
 ```math
- \left v_1^0 =  v_2^0 =  v_3^0 = 0\left
+ v_1^0 =  v_2^0 =  v_3^0 = 0
 ```
 
 Değerleri 
 
 ```math 
- \left f(x) = x^2 \left
+ f(x) = x^2 
 ``` 
  amaç fonsyonunda yeri koyduğumuzda 
 ```math
-    \left x_1 = 4 => f(4) = (4)^2 = 16  \left
+   x_1 = 4 => f(4) = (4)^2 = 16  
 ```   
 ```math
-   \left x_2 = -2 => f(-2) = (-2)^2 = 4  \left
+    x_2 = -2 => f(-2) = (-2)^2 = 4  
 ```   
 ```math
-   \left x_3 = 1 => f(1) = (1)^2 = 1  \left
+    x_3 = 1 => f(1) = (1)^2 = 1  
 ```
 Değerleri elde edilir. Bunların içinde en küçük değer 1 olduğu için sürünün en iyi konumu gBest=1 olur.
