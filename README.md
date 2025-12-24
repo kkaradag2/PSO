@@ -36,10 +36,11 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 + c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
 + c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
 ```
-
+\n
  - **Intertia (Atalet)**
  Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken (```math w ```) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
 
+Atalet: **
  ```math
  w\,\vec{v}_i^t
- ```
+ ```**
