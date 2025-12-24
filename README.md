@@ -31,37 +31,26 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 
 **PSO Hız Güncelleme Formulü**
 
-```math
-\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
-+ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
-+ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
-```
+$`\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t+ c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)+ c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)`$
 
+&nbsp;
+&nbsp;
 
  **Intertia (Atalet)**
- Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
-
- ```math
- w\,\vec{v}_i^t
- ```
+ Bu bileşen  $` w\,\vec{v}_i^t`$ , parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Atalet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
+&nbsp;
 
  **Individual Component (Bireysel Bileşen)**
- Bu bileşen, parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
+ Bu bileşen $`c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)`$ , parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
+&nbsp;
 
- ```math
- c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
-
-```
 **Social Component (Sosyal Bileşen)** 
-Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
-
-```math
- c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)
-```
+Bu bileşen $` c_2 r_2\big(\vec{gBest}^t - \vec{x}_i^t\big)`$, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
+&nbsp;
 
 Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaşlarının başarısını bir araya getirerek bir vektör oluşturur.
 
-##Örnek-I
+## Örnek-I
 3 parçacıktan oluşan bir sürüde, $`f(x) = x^2 `$ amaç fonksyonu minimize edecek sonuca ulaşmak istiyoruz. Bu amaçla algoritmanın $`w=0.5`$, $`c_1=1`$ , $`c_2=1`$  ve $`r1=r2=1`$  değerleri ile iki iterasyon ilerletelim.
 
 ## Çözüm
@@ -159,3 +148,4 @@ bu durumda $`gBest= 0.25`$ olur. Sonuç olarak $`t=0$` anından $`t=2$ anına ka
 | 2 | 2 | -0.5 | -1.5 | 0.25 | -2  | 0.25 |
 | 2 | 3 | 1    | 0    | 1    | 1   | 0.25 |
 
+![Alt text](assets/PSO_Soru_1.png)
