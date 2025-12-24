@@ -36,4 +36,12 @@ v_i^{(t+1)}=w\,v_i^t
 +c_1 r_1\big(P^t_i-x_i^t\big)
 +c_2 r_2\big(G^t-x^t_i\big)
 
+
+**PSO Velocity Update Equation**
+
+```math
+\vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
++ c_1 r_1\big(\vec{P}_i^t - \vec{x}_i^t\big)
++ c_2 r_2\big(\vec{G}^t - \vec{x}_i^t\big)
+
  
