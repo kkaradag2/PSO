@@ -64,7 +64,7 @@ Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki e
 
 Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaşlarının başarısını bir araya getirerek bir vektör oluşturur.
 
-##Örnek-I
+## Örnek-I
 3 parçacıktan oluşan bir sürüde, $`f(x) = x^2 `$ amaç fonksyonu minimize edecek sonuca ulaşmak istiyoruz. Bu amaçla algoritmanın $`w=0.5`$, $`c_1=1`$ , $`c_2=1`$  ve $`r1=r2=1`$  değerleri ile iki iterasyon ilerletelim.
 
 ## Çözüm
