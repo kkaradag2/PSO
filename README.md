@@ -9,7 +9,7 @@ Bir sayısal denklemin türevi alınarak bu denklemin eğitimi tespit edilebilir
 PSO ise eğime güvenmez bunun yerine birden fazla noktaya aynı anda parçacıkları sayesinde gezer. Hangi parçacık iyi bir konum bulduysa diğerlerine haber vererek tüm sürünün yavaş yavaş o noktaya kaymasını sağlar. Bu yaklaşımı ile türevi alınamayan veya alınsa bile çok karmaşık yüzeylerin yada çok paremetreli sistmelerin çözümünde etkili bir çözüm sunar.
 
 ## Dron Örneği
-Bir arama kurtarma bölgesi düşünün. Bu alan çok büyük, inişlerin çıkışların çok fazla olduğu , görüş mesafesinin yer yer farklılaştığı zor bir arazi olsun. Böyle bir arazide tek bir dron ile arama yapan Gradient Descent algoritması şöyle davranır;
+Bir arama kurtarma bölgesi düşünün. Bu alan çok büyük, inişlerin çıkışların çok fazla , görüş mesafesinin yer yer farklı olan zor bir arazi. Böyle bir arazide tek bir dron ile arama yapan Gradient Descent algoritması şöyle davranır;
 - Dron zemine bakar
 - Eğimi hesaplar
 - Aşağıya doğru giden bir yön bulur ve gider.
