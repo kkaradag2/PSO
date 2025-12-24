@@ -73,9 +73,10 @@ w=0.5, c1=1, c2=1 ve r1=r2=1 olmak üzere başlangıç anında parçacıklar sı
 **Başlangıç (t=0)**
 
 - Parçacıkların başlancıç (t=0) anındaki konumları. Genellikle random verilir.
+
 ```math
- \left x_1^0 = 4 \  ,     x_2^0 = -2   \  ,       x_3^0 = 1 \left
-```
+x_1^0 = 4,\quad x_2^0 = -2,\quad x_3^0 = 1
+
 
 - Parçacıkların başlancıç (t=0) anındaki hızları. Başlangıç anınd atüm parçaların hızı 0 dır.
 ```math
