@@ -193,13 +193,9 @@ Bu hesaplama sonucunda gBest = 1 olur.
 ```math
 \vec{v}_1^{(2)} = (0.5).(-3) +(1).(1).(1-1) + (1).(1).(1-1) = -1.5
 ```
+<br/>
+bu hıza bağlı olarak t=2 anında parçacığın yeni konumu $`x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}`$ formülü kullanılarak hesaplanabilir. Böylece;
 
-bu hıza bağlı olarak t=2 anında parçacığın yeni konumu 
-
-```math
-x_i^{t+1} = x_i^t + \vec{v}_i^{t+1}
-```
-forlumü kullanılarak hesaplanabililir.
 ```math
 x_1^{2} = 1 + (-1.5) = 0.5
 ```
@@ -246,4 +242,19 @@ f(1) &= 1
 \end{aligned}
 ```
 
-bu durumda gBest = 0.25 olur.
+bu durumda gBest = 0.25 olur. Sonuç olarak t=0 anındna t=2 anına kadar olan değişim;
+
+## PSO Sayısal Örnek Çıktıları: t = 0 → t = 2 Değişimi
+
+| Zaman (t) | Parçacık | Konum $`(x_i^t)`$ | Hız $`x_i^t`$ |  $`f(x_i^t)`$ | pBest_i | gBest |
+|-----------|----------|---------------|-------------|----------|---------|-------|
+| 0 | 1 | 4    | 0    | 16   | 4   | 1 |
+| 0 | 2 | -2   | 0    | 4    | -2  | 1 |
+| 0 | 3 | 1    | 0    | 1    | 1   | 1 |
+| 1 | 1 | 1    | -3   | 1    | 4   | 1 |
+| 1 | 2 | 1    | 3    | 1    | -2  | 1 |
+| 1 | 3 | 1    | 0    | 1    | 1   | 1 |
+| 2 | 1 | 2.5  | 1.5  | 6.25 | 4   | 0.25 |
+| 2 | 2 | -0.5 | -1.5 | 0.25 | -2  | 0.25 |
+| 2 | 3 | 1    | 0    | 1    | 1   | 0.25 |
+
