@@ -41,6 +41,22 @@ en iyi değer  $`P_1`$ için $`f(x_1)`$ = 22 olduğundan  $`gBest=22`$
 
 b) $`P_2`$ parçaığının başlangıç anında hızı 0 dır. Bunun için $`V_2^0=(0,0,0,0)`$ olarak gösterilir. $`P_2`$ parçaçığının tüm bitlerine sigmoit-bir uygulayarak t=1 anı için hızlarını ve buradan yeni possiyonlarını bulabiliriz.
 
-$`
+ $`\vec{v}_{ij}^{(t+1)} = w\,\vec{v}_i^t + c_1 r_1\big(\vec{pBest}_{ij}^t - \vec{x}_{ij}^t\big) + c_2 r_2\big(\vec{gBest}^t - \vec{x}_{ij}^t\big)`$ formulunde her bir bit için yanı  $`X_2`$=(0, 1, 1, 0) 'nin tüm elemanlarını j indeksindeki değerini alıp fonsyonda yerien koyacağız.
+
+ - j=1 => $`\vec{v}_{21}^{(1)} = w\,\vec{v}_2^0 + c_1 r_1\big(\vec{pBest}_{21}^0 - \vec{x}_{21}^0\big) + c_2 r_2\big(\vec{gBest}^0 - \vec{x}_{21}^t\big)`$= $`0.5.0+2.0.4(0-0)+2.0.7(1-0) = 0+0+1.4 = 1.4`$
+
+$`S(v_{21}^{(1)})=\frac{1}{1+e^{-1.4}} = 0.80`$  ise $`u_1=0.3 < 0.80 => x_{21}^1=1`$
+
+ - j=2 => $`\vec{v}_{22}^{(1)} = w\,\vec{v}_2^0 + c_1 r_1\big(\vec{pBest}_{22}^0 - \vec{x}_{22}^0\big) + c_2 r_2\big(\vec{gBest}^0 - \vec{x}_{22}^t\big)`$= $`0.5.0+2.0.4(1-1)+2.0.7(0-1) = 0+0-1.4 = -1.4`$
+
+$`S(v_{22}^{(1)})=\frac{1}{1+e^{1.4}} = 0.19`$  ise $`u_1=0.8 > 0.19 => x_{22}^1=0`$
+
+ - j=3 => $`\vec{v}_{22}^{(1)} = w\,\vec{v}_2^0 + c_1 r_1\big(\vec{pBest}_{22}^0 - \vec{x}_{22}^0\big) + c_2 r_2\big(\vec{gBest}^0 - \vec{x}_{22}^t\big)`$= $`0.5.0+2.0.4(1-1)+2.0.7(0-1) = 0+0-1.4 = -1.4`$
+
+$`S(v_{22}^{(1)})=\frac{1}{1+e^{1.4}} = 0.19`$  ise $`u_1=0.8 > 0.19 => x_{22}^1=0`$
+
+
+
+
 
 
