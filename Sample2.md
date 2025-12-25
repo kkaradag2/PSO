@@ -24,6 +24,23 @@ Kapasite $`W=7`$ olan bir 0-1 Knapsac problemi için malzemeleirn ağırlıklar�
 
 a) Başlangıç posisyonları için $`W(X), Val(X), f(X), pBest`$ ve $`gBest`$ değerlerini hesapla.
 b) Parçacık $`P_2`$ için velocity $`V_2`$ değerlerini iterasyon-1 de hesaplayın.
-c) Parçacık $`P_2`$ için sigmoid bit güncellemelerini yaparak $`X_2^1`$ possiyonlarını bulun.
-d)  $`X^(1)_2`$ için  $`W(X), Val(X), f(X), pBest`$ ve $`gBest`$ değerlerini tekrar hesaplayın.
+c) Parçacık $`P_2`$ için sigmoid bit güncellemelerini yaparak $`x_2^1$  posisyonlarını hesaplayın.
+d) $`x_2^1$  için  $`W(X), Val(X), f(X), pBest`$ ve $`gBest`$ değerlerini tekrar hesaplayın.
+
+## Cevaplar
+
+a) Başlangıç değerleri için 
+
+| Parçacık | $`X_i`$      | $`W(x)`$    | $`Val(x)`$  | $`f(x)`$       | $`pBest`$       |
+|----------|--------------|-------------|-------------|----------------|-----------------------|
+| $`P_1`$  | $`X_1`$=(1, 0, 1, 1) | 2+0+4+1 = 7 | 6+0+12+4=22 | $`22-5.max(0,(7-7)) = 22-0=22`$|(1, 0, 1, 1)|
+| $`P_2`$  | $`X_2`$=(0, 1, 1, 0) | 0+3+4+0 = 7 | 0+9+12+0=21 | $`21-5.max(0,(7-7)) = 21-0=21`$|(0, 1, 1, 0) |
+| $`P_3`$  | $`X_3`$=(1, 1, 0, 0) | 0+3+4+0 = 5 | 2+2+0+0=15 | $`15-5.max(0,(5-7)) = 15-0=15`$|(1, 1, 0, 0)|
+
+en iyi değer  $`P_1`$ için $`f(x_1)`$ = 22 olduğundan  $`gBest=22`$  
+
+b) $`P_2`$ parçaığının başlangıç anında hızı 0 dır. Bunun için $`V_2^0=(0,0,0,0)`$ olarak gösterilir. $`P_2`$ parçaçığının tüm bitlerine sigmoit-bir uygulayarak t=1 anı için hızlarını ve buradan yeni possiyonlarını bulabiliriz.
+
+$`
+
 
