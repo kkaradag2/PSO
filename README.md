@@ -69,7 +69,7 @@ Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaş
 ## [Örnek Soru 2](Sample2.md)
 
 # Pseudo Code
-
+```code
 01. Initialize the Controlling Parameters(N, c1,c2, Wmin, Wmax, Vmax, MaxIter)
 02. Initialize the population of N Particles
 03. do
@@ -84,4 +84,5 @@ Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaş
 12.       update the positiob(x)
 13.   end for
 14. while the end condition is not satisfied
-15. return gBEST  
+15. return gBEST
+```
