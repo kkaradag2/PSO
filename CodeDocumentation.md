@@ -63,4 +63,4 @@ Kod yapısı (kısa)
   - `enableLogging: true, debugParticles: new int[] {0,1}, maxLoggedIterations: 1, earlyStopPatience: 10`
 
 
-<img width="557" height="412" alt="PSO_Soru_1" src="https://github.com/user-attachments/assets/83766dff-b30d-45be-ac1b-1f4326022471" />
+<img width="557" height="412" alt="PSO_Soru_1" src="https://github.com/kkaradag2/PSO/blob/875bfb62264fc19a03e32bb8e70ba78e8766a752/assets/Code_Documentation.png" />
