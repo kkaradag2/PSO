@@ -62,9 +62,5 @@ Kod yapısı (kısa)
 - `Program.cs` içinde `BinaryPSO` oluşturma örneği:
   - `enableLogging: true, debugParticles: new int[] {0,1}, maxLoggedIterations: 1, earlyStopPatience: 10`
 
-Notlar
-- Proje deneyseldir; üretim kullanımı için ek iyileştirmeler, deterministic random seed, paralel güncelleme, daha sofistike repair/metodlar düşünülebilir.
-- Lisans eklemek istiyorsanız bir `LICENSE` dosyası oluşturun (örn. MIT).
 
-İhtiyaç varsa
-- CSV/JSON log çıktısı, dosyaya yönlendirme, veya `BestFoundAtIteration` bilgisini `GetBestSolution` ile birlikte dönme gibi ek özellikleri ekleyebilirim.
+
