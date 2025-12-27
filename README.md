@@ -68,6 +68,8 @@ Bu formülle, parçacığın mevcut hızını kendi başarılarını ve arkadaş
 
 ## [Örnek Soru 2](Sample2.md)
 
+## [Kod Dokümantasyonu](CodeDocumentation.md)
+
 # Pseudo Code
 ```code
 01. Initialize the Controlling Parameters(N, c1,c2, Wmin, Wmax, Vmax, MaxIter)
