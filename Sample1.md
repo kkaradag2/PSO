@@ -49,7 +49,7 @@ $`t=1`$  anı için yeni bulunan $`x`$ değerleri $`f(x)=x^2`$ amaç fonyonuna k
 
 - $`x_1^1 = 1`$ için  $`f(x)=x^2`$ ise $`f(1)=1^2= 1`$
 - $`x_2^1 = 1`$ için  $`f(x)=x^2`$ ise $`f(1)=1^2= 1`$
-- $`x_3^1 = 1`$ için  $`f(x)=x^2`$ ise $`f(1)=1^2 =1`$ 
+- $`x_3^1 = 1`$ için  $`f(x)=x^2`$ ise $`f(0)=0^2 =0`$ 
 
 Bu hesaplama sonucunda tüm parçacıklar aynı noktada olduğundan birinin en iyi değerini $`gBest = 1`$ olarak atıyoruz.
 
