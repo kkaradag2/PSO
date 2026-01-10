@@ -42,7 +42,7 @@ PSO algoritmasında bir parcacığın bir sonraki adımda nereye gideceğini bel
 
 
  ## Intertia (Atalet)
- Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
+ Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Atalet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
 
  ```math
  w\,\vec{v}_i^t
