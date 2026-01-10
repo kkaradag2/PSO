@@ -27,12 +27,12 @@ PSO algoritması ise bu arazide şöyel davranır. N tane dron aynı anda havala
 Bir dron herkezden daha iyi bir konum bulduğunda diğerleri o yöne doğru yavaş yavaş kaymaya başlar. Bu kayma yavaş yavaş olur ve tüm sürü birden bire aynı noktaya toplanmaz. Böylece, algortma keşif/sömürü dengesini kurmuş olur. Tüm sürü aynı anda en iyi olan noktaya gitmeyerek yol üzeirndeki olası daha iyi konumu sürüye bildirme şansını kaybetmezler ama yavaş yavaş aynı noktaya kayarak tüm parçacıkların en iyi yer egelmesini sağlarlar.
 
 # Hız Denklemi
-Dron sürüsü örneğinde, her dronun aynı and ahavandığını ve farklı yönlere gittiklerinden bahsettik. Peki dronlar farklı yönlere nasıl dağılırlar. İlk başlangıçtadronlar aynı anda havalandığı için hepsi aynı hızda yanı 0 olacaklardır. Hız denklemi parçacıkların mevcut konumlarına göre yeni hızlarını hesaplayıp dronların hızı değiştiğinde doğal olarak aralarındaki mesafe farklılaşacaktır.
+Dron sürüsü örneğinde, her dronun aynı anda havandığını ve farklı yönlere gittiklerinden bahsettik. Peki dronlar farklı yönlere nasıl dağılırlar. İlk başlangıçta dronlar aynı anda havalandığı için hepsi aynı hızda ve "0" hızında olacaklardır. Hız denklemi parçacıkların mevcut konumlarına göre yeni hızlarını hesaplar. Böylece dronların hızı değişir ve doğal olarak aralarındaki mesafe farklılaşır.
 
-PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini belirleyen hızdenklemi (velocity equation), üç temel bileşenden oluşur. Bu bileşenler, parçacığın hem kendi geçmişine hemde sürünün(sosyal) bilgisine daynarak hareket etmesini sağlar.
+PSO algoritmasında bir parcacığın bir sonraki adımda nereye gideceğini belirleyen hızdenklemi (velocity equation), üç temel bileşenden oluşur. Bu bileşenler, parçacığın hem kendi geçmişine hemde sürünün(sosyal) bilgisine daynarak hareket etmesini sağlar.
 
 
-**PSO Hız Güncelleme Formulü**
+## PSO Hız Güncelleme Formulü
 
 ```math
 \vec{v}_i^{(t+1)} = w\,\vec{v}_i^t
@@ -41,21 +41,21 @@ PSO algoritmasında bir parcacığun bir sonraki adımda nereye gideceğini beli
 ```
 
 
- **Intertia (Atalet)**
+ ## Intertia (Atalet)
  Bu bileşen, parçacığın mevcut hareket yönünü ve hızını koruma eğilimidir. Altet ağırlığı adı verilen bu değişken ( w ) ile çarpılır. Bu bileşenin temel görevi, parçacığın aniden yön değiştirmesini engelleyerek arama uzayında daha genişalanaların taranmasını sağlamaktır. (Keşif/exploration)
 
  ```math
  w\,\vec{v}_i^t
  ```
 
- **Individual Component (Bireysel Bileşen)**
+ ## Individual Component (Bireysel Bileşen)
  Bu bileşen, parçacığın hendi geçmişinde ulaştığı en iyi konum (pBest) ile mevcut konumu arasındaki mesafeyi belirtir. Bu bileşen c1 katsayıs ile kontrol edilir.
 
  ```math
  c_1 r_1\big(\vec{pBest}_i^t - \vec{x}_i^t\big)
 
 ```
-**Social Component (Sosyal Bileşen)** 
+## Social Component (Sosyal Bileşen)
 Bu bileşen, parçacığın mevcut konumu ile tüm sürünün şimdiye kadarki en iyi konumu {gBest} arasındaki mesafeyi hesaplar. Bu  da parçacıkların birbirleriyle iletişim kurması ve sürünün kollektif hareket etmesini sağlar Bu bileşen c2 katsayıs ile yönetilir.
 
 ```math
