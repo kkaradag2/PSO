@@ -12,7 +12,7 @@ $`t = 0`$ anında parçacıkların konumları rastgele belirlenir. Yani arazi ü
 
 Parçaların $`t = 0`$ anındaki konumları $`f(x)=x^2`$ amaç foksiyonuna x değeri olarak konularak sürünün en iyi konumu belirlenmeye çalışılır.
 
-- $`x_1= 4`$ => $`f(x)=x^2`$ 'den $`f(4)=(4)^2 = 14`$
+- $`x_1= 4`$ => $`f(x)=x^2`$ 'den $`f(4)=(4)^2 = 16`$
 - $`x_2=-2`$ => $`f(x)=x^2`$ 'den $`f(-2)=(-2)^2 = 4`$
 - $`x_1= 4`$ => $`f(x)=x^2`$ 'den $`f(1)=(1)^2 = 1`$
 
