@@ -37,7 +37,7 @@ a) Başlangıç değerleri için
 | $`P_2`$  | $`X_2`$=(0, 1, 1, 0) | 0+3+4+0 = 7 | 0+9+12+0=21 | $`21-5.max(0,(7-7)) = 21-0=21`$|(0, 1, 1, 0) |
 | $`P_3`$  | $`X_3`$=(1, 1, 0, 0) | 0+3+4+0 = 5 | 2+2+0+0=15 | $`15-5.max(0,(5-7)) = 15-0=15`$|(1, 1, 0, 0)|
 
-en iyi değer  $`P_1`$ için $`f(x_1)`$ = 22 olduğundan  $`gBest=22`$  
+Yukarıdaki tabloda en iyi değer  $`P_1`$ 'in ürettiği $`f(x_1)`$ = 22 olduğu için  $`gBest=22`$  
 
 b) $`P_2`$ parçaığının başlangıç anında hızı 0 dır. Bunun için $`V_2^0=(0,0,0,0)`$ olarak gösterilir. $`P_2`$ parçaçığının tüm bitlerine sigmoit-bir uygulayarak t=1 anı için hızlarını ve buradan yeni possiyonlarını bulabiliriz.
 
