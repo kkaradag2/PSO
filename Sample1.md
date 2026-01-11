@@ -69,8 +69,8 @@ Bu hesaplama sonucunda tüm parçacıklar aynı noktada olduğundan birinin en i
 
 **Parçacık 3**
 
-- $`t=1`$ anı için hız, $`\vec{v}_3^{(2)} = (0.5).(0) +(1).(1).(1-1) + (1).(1).(1-1) = 0`$ 
-- $`t=1`$ anı için konum, $`x_3^{2} = 1 +0 = 1`$  olarak hesaplanır.
+- $`t=1`$ anı için hız, $`\vec{v}_3^{(2)} = (0.5).(0) +(1).(1).(1-0) + (1).(1).(1-0) = 2`$ 
+- $`t=1`$ anı için konum, $`x_3^{2} = 0 +0 = 1`$  olarak hesaplanır.
 
 &nbsp;
 Buradan;
