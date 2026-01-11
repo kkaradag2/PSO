@@ -70,7 +70,7 @@ Bu hesaplama sonucunda tüm parçacıklar aynı noktada olduğundan birinin en i
 **Parçacık 3**
 
 - $`t=1`$ anı için hız, $`\vec{v}_3^{(2)} = (0.5).(0) +(1).(1).(1-0) + (1).(1).(1-0) = 2`$ 
-- $`t=1`$ anı için konum, $`x_3^{2} = 0 +0 = 1`$  olarak hesaplanır.
+- $`t=1`$ anı için konum, $`x_3^{2} = 0 + 2 = 2`$  olarak hesaplanır.
 
 &nbsp;
 Buradan;
@@ -79,7 +79,7 @@ $`t=2`$  anı için yeni bulunan $`x`$ değerleri $`f(x)=x^2`$ amaç fonyonuna k
 
 - $`x_1^2 = 0.5`$ için  $`f(x)=x^2`$ ise $`f(0.5)=(0.5)^2= 0.25`$
 - $`x_2^2 = 2.5`$ için  $`f(x)=x^2`$ ise $`f(2.5)=(2.5)^2= 6.25`$
-- $`x_3^2 = 1`$ için  $`f(x)=x^2`$ ise $`f(1)=1^2 =1`$ 
+- $`x_3^2 = 2`$ için  $`f(x)=x^2`$ ise $`f(2)=2^2 =4`$ 
 
 &nbsp;
 bu durumda $`gBest= 0.25`$ olur. Sonuç olarak $`t=0$` anından $`t=2$ anına kadar olan değişim aşağıdaki tablodaki gibi özetlenebilir
